@@ -3,6 +3,9 @@
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
 
+* {
+	box-sizing: content-box;
+}
 
 $gold:#bca64f;
 $navy: #103341;
@@ -20,7 +23,7 @@ shell {
 header {
 	background: #0000ff url("../images/mobile-fullSize-background.jpg") no-repeat center;
 	background-size: cover;
-	height: 856px;
+	height: 450px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -28,10 +31,18 @@ header {
 
 	.logo {
 
-		width: 26%;
+		width: 23%;
 		max-width: 100%;
 		height: auto;
 		margin: 0 auto;
+	}
+
+	.nav-link {
+		color: #fff;
+	}
+
+	.etsy {
+		border: #fff solid 2px;
 	}
 
 	h1 {
@@ -50,7 +61,7 @@ header {
 		font-size: 14px;
 		font-weight: 600;
 		text-align: center;
-		margin: 0 25%;
+		margin: 0 10%;
 		line-height: 1.5rem;
 		color: #fff;
 	}
@@ -59,7 +70,7 @@ header {
 		background: $gold;
 		height: 90px;
 		margin-bottom: 0;
-		
+
 	
 		p {
 
@@ -75,7 +86,7 @@ header {
 		display: flex;
 		justify-content: center;
 		a {
-			font-size: 10rem;
+			font-size: 5rem;
 			color: #fff;
 			text-align: center;
 		}

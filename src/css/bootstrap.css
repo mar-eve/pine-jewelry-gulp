@@ -5685,6 +5685,9 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
+* {
+  box-sizing: content-box; }
+
 img {
   width: 100%;
   max-width: 100%;
@@ -5696,15 +5699,19 @@ shell {
 header {
   background: #0000ff url("../images/mobile-fullSize-background.jpg") no-repeat center;
   background-size: cover;
-  height: 856px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center; }
   header .logo {
-    width: 26%;
+    width: 23%;
     max-width: 100%;
     height: auto;
     margin: 0 auto; }
+  header .nav-link {
+    color: #fff; }
+  header .etsy {
+    border: #fff solid 2px; }
   header h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
@@ -5717,7 +5724,7 @@ header {
     font-size: 14px;
     font-weight: 600;
     text-align: center;
-    margin: 0 25%;
+    margin: 0 10%;
     line-height: 1.5rem;
     color: #fff; }
   header .shop-etsy {
@@ -5734,7 +5741,7 @@ header {
     display: flex;
     justify-content: center; }
     header .play a {
-      font-size: 10rem;
+      font-size: 5rem;
       color: #fff;
       text-align: center; }
     header .play p {
