@@ -5710,6 +5710,9 @@ header {
     margin: 0 auto; }
   header .nav-link {
     color: #fff; }
+  header .navbar-toggler {
+    color: #bca64f;
+    padding: 0; }
   header .etsy {
     border: #fff solid 2px; }
   header h1 {
@@ -5717,7 +5720,7 @@ header {
     font-size: 30px;
     font-weight: 300;
     text-align: center;
-    margin: 50px 0;
+    margin: 30px 0;
     color: #fff; }
   header p {
     font-family: 'Montserrat', sans-serif;
@@ -5774,6 +5777,15 @@ main .icons {
     padding: 20px 4%;
     font-size: 25px;
     color: #b0b0b0; }
+
+main .diagonal-pics h2 {
+  padding: 25px 0; }
+
+main .diagonal-pics p {
+  padding: 20px 2%; }
+
+main .diagonal-pics img {
+  padding: 0 5%; }
 
 .inverted-panel {
   display: flex;
