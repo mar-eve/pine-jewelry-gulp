@@ -5688,18 +5688,15 @@ a.text-dark:focus, a.text-dark:hover {
 * {
   box-sizing: content-box; }
 
-img {
-  width: 100%;
-  max-width: 100%;
-  height: auto; }
+body {
+  font-family: 'Montserrat', sans-serif; }
 
-shell {
+.container-fluid {
   background: #fff; }
 
 header {
   background: #0000ff url("../images/mobile-fullSize-background.jpg") no-repeat center;
   background-size: cover;
-  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -5707,7 +5704,8 @@ header {
     width: 23%;
     max-width: 100%;
     height: auto;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: -45px; }
   header .nav-link {
     color: #fff; }
   header .navbar-toggler {
@@ -5716,42 +5714,44 @@ header {
   header .etsy {
     border: #fff solid 2px; }
   header h1 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 300;
     text-align: center;
-    margin: 30px 0;
-    color: #fff; }
+    margin: 20px 0;
+    color: #fff;
+    opacity: 0.7; }
   header p {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 600;
     text-align: center;
-    margin: 0 10%;
+    margin: 0 10% 50px 10%;
     line-height: 1.5rem;
-    color: #fff; }
-  header .shop-etsy {
-    background: #bca64f;
-    height: 90px;
-    margin-bottom: 0; }
-    header .shop-etsy p {
-      font-size: 18px;
-      font-weight: 600;
-      text-align: center;
-      margin-top: 34px;
-      color: #fff; }
+    color: #fff;
+    opacity: 0.7; }
   header .play {
     display: flex;
     justify-content: center; }
     header .play a {
       font-size: 5rem;
       color: #fff;
-      text-align: center; }
+      text-align: center;
+      opacity: 0.7; }
     header .play p {
       font-size: 18px;
       font-weight: 400;
       text-align: center;
-      margin: 50px 0 220px 0; }
+      margin: 20px 0 260px 0; }
+  header .shop-etsy {
+    background: #bca64f;
+    height: 45px;
+    margin-bottom: 0; }
+    header .shop-etsy p {
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 13px;
+      color: #fff; }
 
 main h2 {
   font-family: 'Montserrat', sans-serif;
@@ -5774,8 +5774,8 @@ main .icons {
   display: flex;
   justify-content: center; }
   main .icons p {
-    padding: 20px 4%;
-    font-size: 25px;
+    padding: .5% 4%;
+    font-size: 1rem;
     color: #b0b0b0; }
 
 main .diagonal-pics h2 {
@@ -5785,10 +5785,10 @@ main .diagonal-pics p {
   padding: 20px 2%; }
 
 main .diagonal-pics img {
-  padding: 0 5%; }
+  padding: 0 5%;
+  padding-right: 5%; }
 
 .inverted-panel {
-  display: flex;
   background: #103341; }
   .inverted-panel h2 {
     font-family: 'Montserrat', sans-serif;
@@ -5811,3 +5811,5 @@ main .diagonal-pics img {
     font-weight: 300;
     line-height: 1.2rem;
     text-align: center; }
+  .inverted-panel img {
+    padding: 0 2%; }

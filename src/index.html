@@ -9,12 +9,12 @@
 	 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	
 </head>
 <body>
-	<div class="shell">
+	<div class=".container-fluid">
 		<header>
 			
 
@@ -48,7 +48,7 @@
 				<a href="#"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
 				
 			</div>
-            <p class="play"> PLAY VIDEO </p>
+            <p> PLAY VIDEO </p>
 			<div class = "shop-etsy">
 				<p> SHOP ON ETSY </p>
 			</div>
@@ -57,7 +57,7 @@
 
 		<main>
 			<div>
-				<img src="images/girl-back.jpg">
+				<img class="img-fluid" src="images/key-mobile.jpg">
 			</div>
 			<h2>Every piece is unique tying in old and new</h2>
 			<p>Every Pine Jewelry piece is created with great attention to detail using a combination of both new items, antiques and recycled materials.  This means every piece is unique</p>
@@ -73,71 +73,81 @@
 			
 
 			<div>
-				<img src="images/beads-mobile.jpg">
+				<img class="img-fluid" src="images/beads-mobile.jpg">
 			</div>
 
 			<div class="diagonal-pics">
 				<div class="col1">
 					<h2> We have been hand crafting jewelry since 1993</h2>
 					<p>Our location in historic flagstaff leaves us with access to some of the best natural materials and antiques in the country.  We maintain sustainable practices and always think about the environment first.</p>
-					<img src="images/wrist-mobile.jpg">
+					<img class="img-fluid" src="images/wrist-mobile.jpg">
 				</div>
 
 				<div class="col2">
 					
 					<h2>Custom pieces are available upon request</h2>
 					<p>If you're looking for a custom item or having an herloom used to create a new peice, we will work with you to make sure your vision becomes a reality.</p>
-					<img src="images/girl-hat-mobile.jpg">
+					<img class="img-fluid" src="images/girl-hat-mobile.jpg">
 				</div>
+			</div>
 
-				<div class="inverted-panel">
+			<div class="row inverted-panel">
+				<div class="col-12">
 					<h2>Our inspiration comes both from nature, and being in the historic Wild West.</h2>
-					<div class="four-images">
+				</div>
+				<div class="row four-images">
+					<div class="col-6 col-sm-3">
 						<img src="images/no-head-mobile.jpg">
 						<h3>Necklaces</h3>
-						<p>Long or short natural</p>
-						<p>natural or metal</p>
-						<p>new or old</p>
+						<p>Long or short<br> natural or metal<br> new or old</p>
+					</div>
+					<div class="col-6 col-sm-3">
 						<img src="images/bracelet-mobile.jpg">
 						<h3>Bracelets</h3>
-						<p>Cuffs, leather</p>
-						<p>tied, or spiked</p>
+						<p>Cuffs, leather <br>tied, or spiked</p>
+					</div>
+					<div class="col-6 col-sm-3">
 						<img src="images/earrings-mobile.jpg">
 						<h3>Earrings</h3>
-						<p>Sold in pairs</p>
-						<p>and as singles</p>
-						<img src="images/rings-mobile.jpg">
+						<p>Sold in pairs <br> and as singles</p>	
+					</div>
+					<div class="col-6 col-sm-3">
+						<img class="img-fluid" src="images/rings-mobile.jpg">
 						<h3>Rings</h3>
-						<p>Specializing in custom heirloom settings</p>	
+						<p>Specializing <br>in custom heirloom <br>settings</p>	
 					</div>
 				</div>
-				<div class="closing">
-					
-					<img src="images/pine-mobile.jpg">
-					<h3>Cusotm orders now up to 20% off</h3>
-					<p>Coupon code: 20off</p>
-					<p>CHECK OUT OUR SHOP</p>
-					<p> Check out our Etsy Store </p>
-					<form>
-						<input type="email">
-						<button>KEEP UPDATED</button>
-					</form>
-				</div>
-				<footer>
-					<p>Copyright 2017 Pine Jewelry</p>
-					<p></p>
-					<a href="#">Contact Us</a>
-					<a href="#">FAQs</a>
-					<a href="#">About Pine Jewelry</a>
-					<a href="#">Terms of Service</a>
-					
-				</footer>
+			</div>
+
+
+			<div class="closing">
+				
+				<img class="img-fluid" src="images/pine-mobile.jpg">
+				<h3>Cusotm orders now up to 20% off</h3>
+				<p>Coupon code: 20off</p>
+				<p>CHECK OUT OUR SHOP</p>
+				<p> Check out our Etsy Store </p>
+				<form>
+					<input type="email">
+					<button>KEEP UPDATED</button>
+				</form>
 			</div>
 		</main>
+
+			<footer>
+				<p>Copyright 2017 Pine Jewelry</p>
+				<p></p>
+				<a href="#">Contact Us</a>
+				<a href="#">FAQs</a>
+				<a href="#">About Pine Jewelry</a>
+				<a href="#">Terms of Service</a>
+				
+			</footer>
+		
 	</div>
 
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
