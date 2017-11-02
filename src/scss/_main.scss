@@ -3,9 +3,7 @@
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
 
-* {
-	box-sizing: content-box;
-}
+
 
 $gold:#bca64f;
 $navy: #103341;
@@ -16,8 +14,12 @@ body {
 }
 
 
+
 .container-fluid {
 	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
 }
 
 header {
@@ -110,6 +112,10 @@ header {
 
 }
 main {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	h2 {
 		font-family: 'Montserrat', sans-serif;
 		font-size: 20px;
@@ -141,22 +147,24 @@ main {
 	}
 
 	.diagonal-pics {
+		padding: 40px 5%;
 		h2 {
 			padding: 25px 0;
 		}
 		p{
 			padding: 20px 2%;
+			text-align: center;
 		}
 		img {
 			padding: 0 5%;
-			padding-right: 5%;
 		}
 	}
 }
 
 .inverted-panel {
 
-  
+  	margin: 0 4%;
+  	margin-right: 4%;
     background: #103341;
 	h2 {
 		font-family: 'Montserrat', sans-serif;
@@ -199,7 +207,7 @@ main {
 		display:none;
 	}	
 	.desktop {
-		display:block;
+		display:inline-block;
 	}
 	
 }

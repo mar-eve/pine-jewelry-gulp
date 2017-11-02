@@ -5685,14 +5685,14 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
-* {
-  box-sizing: content-box; }
-
 body {
   font-family: 'Montserrat', sans-serif; }
 
 .container-fluid {
-  background: #fff; }
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: left; }
 
 header {
   background: #0000ff url("../images/mobile-fullSize-background.jpg") no-repeat center;
@@ -5753,42 +5753,45 @@ header {
       margin-top: 13px;
       color: #fff; }
 
-main h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  color: #000;
-  font-weight: 300;
-  text-align: center;
-  padding: 25px 15%; }
-
-main p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  color: #666;
-  font-weight: 300;
-  line-height: 1.2rem;
-  text-align: center;
-  padding: 15px 5%; }
-
-main .icons {
+main {
   display: flex;
+  flex-direction: column;
   justify-content: center; }
-  main .icons p {
-    padding: .5% 4%;
-    font-size: 1rem;
-    color: #b0b0b0; }
-
-main .diagonal-pics h2 {
-  padding: 25px 0; }
-
-main .diagonal-pics p {
-  padding: 20px 2%; }
-
-main .diagonal-pics img {
-  padding: 0 5%;
-  padding-right: 5%; }
+  main h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #000;
+    font-weight: 300;
+    text-align: center;
+    padding: 25px 15%; }
+  main p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #666;
+    font-weight: 300;
+    line-height: 1.2rem;
+    text-align: center;
+    padding: 15px 5%; }
+  main .icons {
+    display: flex;
+    justify-content: center; }
+    main .icons p {
+      padding: .5% 4%;
+      font-size: 1rem;
+      color: #b0b0b0; }
+  main .diagonal-pics {
+    padding: 40px 5%; }
+    main .diagonal-pics h2 {
+      padding: 25px 0; }
+    main .diagonal-pics p {
+      padding: 20px 2%;
+      text-align: center; }
+    main .diagonal-pics img {
+      padding: 0 5%; }
 
 .inverted-panel {
+  margin: 0 4%;
+  margin-right: 4%;
   background: #103341; }
   .inverted-panel h2 {
     font-family: 'Montserrat', sans-serif;
@@ -5822,4 +5825,4 @@ main .diagonal-pics img {
   .mobile {
     display: none; }
   .desktop {
-    display: block; } }
+    display: inline-block; } }
