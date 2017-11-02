@@ -5796,7 +5796,8 @@ main .diagonal-pics img {
     color: #fff;
     font-weight: 400;
     line-height: 1.2rem;
-    text-align: center; }
+    text-align: center;
+    opacity: 0.7; }
   .inverted-panel h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -5813,3 +5814,12 @@ main .diagonal-pics img {
     text-align: center; }
   .inverted-panel img {
     padding: 0 2%; }
+
+.desktop {
+  display: none; }
+
+@media (min-width: 576px) {
+  .mobile {
+    display: none; }
+  .desktop {
+    display: block; } }
