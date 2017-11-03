@@ -19,11 +19,11 @@ body {
 	background: #fff;
 	display: flex;
 	flex-direction: column;
-	justify-content: left;
+	justify-content: center;
 }
 
 header {
-	background: #0000ff url("../images/mobile-fullSize-background.jpg") no-repeat center;
+	background: url("../images/mobile-background.jpg") no-repeat center;
 	background-size: cover;
 
 	display: flex;
@@ -146,7 +146,9 @@ main {
 		}
 	}
 
-	.diagonal-pics {
+	
+}
+.diagonal-pics {
 		padding: 40px 5%;
 		h2 {
 			padding: 25px 0;
@@ -159,8 +161,6 @@ main {
 			padding: 0 5%;
 		}
 	}
-}
-
 .inverted-panel {
 
   	margin: 0 4%;
@@ -198,11 +198,98 @@ main {
 	}
 }
 
+.closing {
+	h2	{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 22px;
+		color: #999;
+		font-weight: 300;
+		line-height: 1.2rem;
+		text-align: center;
+	}
+	h4	{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 22px;
+		color: #666;
+		font-weight: 400;
+		line-height: 1.2rem;
+		text-align: center;
+	}
+	a {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 22px;
+		padding: 20px;
+		color: #fff;
+		background: $gold;
+		font-weight: 400;
+		line-height: 1.2rem;
+		text-align: center;
+	}
+	p	{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 11px;
+		color: #999;
+		font-weight: 300;
+		line-height: 1.2rem;
+		text-align: center;
+	}
+	button	{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 18px;
+		padding: 15px 20px;
+		color: #fff;
+		background: #666;
+		font-weight: 600;
+		line-height: 1.2rem;
+		text-align: center;
+	}
+
+
+
+}
+
 .desktop {
 	display: none;
 }
 
 @media (min-width: 576px){
+	header {
+		background: url("../images/background1.jpg") no-repeat center;
+	}
+	.logo {
+
+		width: 10%;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+		margin-top: -45px;
+	}
+
+	.diagonal-pics {
+		padding: 40px 5%;
+		h2 {
+			padding: 25px 0;
+			text-align: left;
+		}
+		p{
+			padding: 0px 2%;
+			text-align: left;
+		}
+		
+	}
+	.inverted-panel {
+		padding: 0 15%;
+  		margin: 0;
+		h2 {
+			padding: 50px 32%;
+		}
+
+		h3 {
+			padding-top: 30px;
+		}
+	
+	}
+
 	.mobile {
 		display:none;
 	}	
