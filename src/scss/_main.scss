@@ -219,10 +219,10 @@ main {
 		font-family: 'Montserrat', sans-serif;
 		font-size: 22px;
 		padding: 20px;
+		width: 100%;
 		color: #fff;
 		background: $gold;
 		font-weight: 400;
-		line-height: 1.2rem;
 		text-align: center;
 	}
 	p	{
@@ -233,19 +233,31 @@ main {
 		line-height: 1.2rem;
 		text-align: center;
 	}
+	#email {
+		width: 100%;
+		height: 100%;
+		height: 60px;
+		margin: 0 3%;
+		color: #eee;
+		text-align: center;
+		background: #fff;
+	 	border: 3px solid #999;
+	}
 	button	{
 		font-family: 'Montserrat', sans-serif;
 		font-size: 18px;
 		padding: 15px 20px;
+		width: 100%;
 		color: #fff;
-		background: #666;
+		background: #999;
 		font-weight: 600;
 		line-height: 1.2rem;
 		text-align: center;
 	}
+}
 
-
-
+a.nav-link, .navbar-brand{
+	color: #ddd;
 }
 
 .desktop {
