@@ -33,7 +33,7 @@ header {
 
 	.logo {
 
-		width: 23%;
+		width: 20%;
 		max-width: 100%;
 		height: auto;
 		margin: 0 auto;
@@ -298,16 +298,16 @@ a.nav-link {
 
 	header {
 		background: url("../images/background1.jpg") no-repeat center;
-	}
+	
 	.logo {
 
 		width: 10%;
-		max-width: 100%;
+		max-width: 10%;
+		align-self: flex-start;
 		height: auto;
 		margin: 0 auto;
-		margin-top: -45px;
 	}
-
+}
 	.diagonal-pics {
 		padding: 40px 5%;
 		h2 {
@@ -344,14 +344,10 @@ a.nav-link {
 	}
 
 	
-		a.nav-link {
+		a.foot {
 		  border-right: #ddd solid 2px;
 		}
 
-		li.nav-item:last-of-type {
-			a.nav-link{
-		  		border-right: none;
-			}
-		}
+	
 	
 }
