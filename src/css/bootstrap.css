@@ -5712,7 +5712,7 @@ header {
     color: #bca64f;
     padding: 0; }
   header .etsy {
-    border: #fff solid 2px; }
+    border: none; }
   header h1 {
     font-size: 30px;
     font-weight: 300;
@@ -5735,8 +5735,7 @@ header {
     header .play a {
       font-size: 5rem;
       color: #fff;
-      text-align: center;
-      opacity: 0.7; }
+      text-align: center; }
     header .play p {
       font-size: 18px;
       font-weight: 400;
@@ -5907,11 +5906,13 @@ a.nav-link {
   header {
     background: url("../images/background1.jpg") no-repeat center; }
     header .logo {
-      width: 10%;
+      width: 5%;
       max-width: 10%;
       align-self: flex-start;
       height: auto;
       margin: 0 auto; }
+    header .etsy {
+      border: #fff solid 2px; }
   .diagonal-pics {
     padding: 40px 5%; }
     .diagonal-pics h2 {
