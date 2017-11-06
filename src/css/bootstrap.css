@@ -5707,7 +5707,8 @@ header {
     margin: 0 auto;
     margin-top: -45px; }
   header .nav-link {
-    color: #fff; }
+    color: #fff;
+    text-align: right; }
   header .navbar-toggler {
     color: #bca64f;
     padding: 0; }
@@ -5790,8 +5791,7 @@ main {
     padding: 0 5%; }
 
 .inverted-panel {
-  margin: 0 4%;
-  margin-right: 4%;
+  margin: 0 0;
   background: #103341; }
   .inverted-panel h2 {
     font-family: 'Montserrat', sans-serif;
@@ -5816,15 +5816,19 @@ main {
     line-height: 1.2rem;
     text-align: center; }
   .inverted-panel img {
-    padding: 0 2%; }
+    padding: 0 2%;
+    height: auto;
+    margin: 0 auto; }
 
 .closing h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   color: #999;
   font-weight: 300;
+  opacity: 0.7;
   line-height: 1.2rem;
-  text-align: center; }
+  text-align: center;
+  margin: -80px 0 30px 0; }
 
 .closing h4 {
   font-family: 'Montserrat', sans-serif;
@@ -5832,7 +5836,11 @@ main {
   color: #666;
   font-weight: 400;
   line-height: 1.2rem;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 50px; }
+
+.closing #cta {
+  padding: 0 8%; }
 
 .closing a {
   font-family: 'Montserrat', sans-serif;
@@ -5840,12 +5848,17 @@ main {
   display: block;
   padding: 20px;
   margin-bottom: 50px;
-  margin-right: 0;
   width: 100%;
   color: #fff;
   background: #bca64f;
   font-weight: 400;
   text-align: center; }
+
+.closing a:hover {
+  color: #bca64f;
+  background: #fff;
+  border: 2px solid #bca64f;
+  text-decoration: none; }
 
 .closing p {
   font-family: 'Montserrat', sans-serif;
@@ -5856,15 +5869,14 @@ main {
   text-align: center; }
 
 .closing .mail-list {
-  padding: 0 20%;
+  padding: 0 5%;
   margin-bottom: 50px; }
 
 .closing #email {
+  font-style: italic;
   display: inline-block;
   width: 100%;
-  height: 100%;
   height: 60px;
-  margin: 0 3%;
   color: #eee;
   text-align: center;
   background: #fff;
@@ -5875,16 +5887,21 @@ main {
   font-size: 18px;
   padding: 15px 20px;
   width: 100%;
+  height: 60px;
   color: #fff;
   background: #999;
   font-weight: 600;
   line-height: 1.2rem;
   text-align: center; }
 
+.closing button:hover {
+  background: #666; }
+
 a.nav-link {
   font-size: 11px;
   line-height: 1rem;
-  color: #ddd; }
+  color: #ddd;
+  text-align: center; }
 
 .social {
   text-align: center;
@@ -5908,9 +5925,7 @@ a.nav-link {
     header .logo {
       width: 5%;
       max-width: 10%;
-      align-self: flex-start;
-      height: auto;
-      margin: 0 auto; }
+      margin: -40px 0 0 5%; }
     header .etsy {
       border: #fff solid 2px; }
   .diagonal-pics {
@@ -5925,13 +5940,14 @@ a.nav-link {
     padding: 0 15%;
     margin: 0; }
     .inverted-panel h2 {
-      padding: 50px 32%; }
+      padding: 50px 0; }
     .inverted-panel h3 {
       padding-top: 30px; }
   .closing h2 {
     margin-top: -150px; }
   .closing a {
-    width: 400px;
+    width: 400px; }
+  .closing #cta {
     justify-content: center; }
   a.foot {
     border-right: #ddd solid 2px; } }

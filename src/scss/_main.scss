@@ -9,11 +9,8 @@ $gold:#bca64f;
 $navy: #103341;
 
 body {
-	  font-family: 'Montserrat', sans-serif;
-	
+	  font-family: 'Montserrat', sans-serif;	
 }
-
-
 
 .container-fluid {
 	background: #fff;
@@ -42,7 +39,9 @@ header {
 
 	.nav-link {
 		color: #fff;
+		text-align: right;
 	}
+
 	.navbar-toggler {
 		color: $gold;
 		padding: 0;
@@ -110,11 +109,12 @@ header {
 	}
 
 }
-main {
 
+main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+
 	h2 {
 		font-family: 'Montserrat', sans-serif;
 		font-size: 20px;
@@ -136,11 +136,11 @@ main {
 	.icons {
 		display: flex;
 		justify-content: center;
-	 p{
-		
-		padding: .5% 4%;
-		font-size: 1rem;
-		color: #b0b0b0;
+		 p{
+			
+			padding: .5% 4%;
+			font-size: 1rem;
+			color: #b0b0b0;
 
 		}
 	}
@@ -160,11 +160,11 @@ main {
 			padding: 0 5%;
 		}
 	}
-.inverted-panel {
 
-  	margin: 0 4%;
-  	margin-right: 4%;
+.inverted-panel {
+  	margin: 0 0;
     background: #103341;
+
 	h2 {
 		font-family: 'Montserrat', sans-serif;
 		font-size: 20px;
@@ -192,8 +192,9 @@ main {
 		text-align: center;
 	}
 	img {
-	
 		padding: 0 2%;
+		height: auto;
+		margin: 0 auto;
 	}
 }
 
@@ -203,8 +204,10 @@ main {
 		font-size: 22px;
 		color: #999;
 		font-weight: 300;
+		opacity: 0.7;
 		line-height: 1.2rem;
 		text-align: center;
+		margin: -80px 0 30px 0;
 	}
 	h4	{
 		font-family: 'Montserrat', sans-serif;
@@ -213,6 +216,10 @@ main {
 		font-weight: 400;
 		line-height: 1.2rem;
 		text-align: center;
+		margin-bottom: 50px;
+	}
+	#cta {
+		padding: 0 8%;
 	}
 	a {
 		font-family: 'Montserrat', sans-serif;
@@ -220,12 +227,17 @@ main {
 		display: block;
 		padding: 20px;
 		margin-bottom: 50px;
-		margin-right: 0;
 		width: 100%;
 		color: #fff;
 		background: $gold;
 		font-weight: 400;
 		text-align: center;
+	}
+	a:hover {
+		color: $gold;
+		background: #fff;
+		border: 2px solid $gold;
+		text-decoration: none;
 	}
 	p	{
 		font-family: 'Montserrat', sans-serif;
@@ -236,15 +248,14 @@ main {
 		text-align: center;
 	}
 	.mail-list {
-		padding: 0 20%;
+		padding: 0 5%;
 		margin-bottom: 50px;
 	}
 	#email {
+		font-style: italic;
 		display: inline-block;
 		width: 100%;
-		height: 100%;
 		height: 60px;
-		margin: 0 3%;
 		color: #eee;
 		text-align: center;
 		background: #fff;
@@ -255,11 +266,15 @@ main {
 		font-size: 18px;
 		padding: 15px 20px;
 		width: 100%;
+		height: 60px;
 		color: #fff;
 		background: #999;
 		font-weight: 600;
 		line-height: 1.2rem;
 		text-align: center;
+	}
+	button:hover {
+		background: #666;
 	}
 }
 
@@ -267,7 +282,7 @@ a.nav-link {
 	font-size: 11px;
 	line-height: 1rem;
 	color: #ddd;
-
+	text-align: center;
 }
 
 .social {
@@ -298,18 +313,18 @@ a.nav-link {
 	header {
 		background: url("../images/background1.jpg") no-repeat center;
 	
-	.logo {
+		.logo {
 
-		width: 5%;
-		max-width: 10%;
-		align-self: flex-start;
-		height: auto;
-		margin: 0 auto;
+			width: 5%;
+			max-width: 10%;
+			margin: -40px 0 0 5%;
+			
+		}
+		.etsy{
+			border: #fff solid 2px;
+		}
 	}
-	.etsy{
-		border: #fff solid 2px;
-	}
-}
+
 	.diagonal-pics {
 		padding: 40px 5%;
 		h2 {
@@ -322,11 +337,12 @@ a.nav-link {
 		}
 		
 	}
+
 	.inverted-panel {
 		padding: 0 15%;
   		margin: 0;
 		h2 {
-			padding: 50px 32%;
+			padding: 50px 0;
 		}
 
 		h3 {
@@ -334,6 +350,7 @@ a.nav-link {
 		}
 	
 	}
+
 	.closing {
 		h2 {
 			margin-top: -150px;
@@ -341,15 +358,17 @@ a.nav-link {
 		}
 		a {
 		    width: 400px;
+		}
+		#cta {
 			justify-content:center;
+			
 		}
 	}
 
 	
-		a.foot {
-		  border-right: #ddd solid 2px;
-		}
+	a.foot {
+	  border-right: #ddd solid 2px;
 
-	
+	}
 	
 }
