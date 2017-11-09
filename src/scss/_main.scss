@@ -5,9 +5,6 @@
 
 
 
-$gold:#bca64f;
-$navy: #103341;
-
 body {
 	  font-family: 'Montserrat', sans-serif;	
 }
@@ -22,7 +19,6 @@ body {
 header {
 	background: url("../images/mobile-background.jpg") no-repeat center;
 	background-size: cover;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -37,10 +33,11 @@ header {
 		margin-top: -45px;
 	}
 
-	.nav-link {
+	a.nav-link {
 		color: #fff;
 		text-align: right;
 	}
+
 
 	.navbar-toggler {
 		color: $gold;
@@ -62,7 +59,6 @@ header {
 
 	
 	p {
-	    font-family: 'Montserrat', sans-serif;
 		font-size: 14px;
 		font-weight: 600;
 		text-align: center;
@@ -195,6 +191,7 @@ main {
 		padding: 0 2%;
 		height: auto;
 		margin: 0 auto;
+		
 	}
 }
 
