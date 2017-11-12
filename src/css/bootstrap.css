@@ -5789,6 +5789,9 @@ main {
   .diagonal-pics img {
     padding: 0 5%; }
 
+.four {
+  margin: 0 0.5%; }
+
 .inverted-panel {
   margin: 0 0;
   background: #103341; }
@@ -5816,8 +5819,9 @@ main {
     text-align: center; }
   .inverted-panel img {
     padding: 0 2%;
+    width: 100%;
     height: auto;
-    margin: 0 auto; }
+    margin: auto; }
 
 .closing h2 {
   font-family: 'Montserrat', sans-serif;
@@ -5842,14 +5846,14 @@ main {
   padding: 0 8%; }
 
 .closing a {
+  background: #bca64f;
   font-family: 'Montserrat', sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   display: block;
   padding: 20px;
   margin-bottom: 50px;
   width: 100%;
   color: #fff;
-  background: #bca64f;
   font-weight: 400;
   text-align: center; }
 
@@ -5867,11 +5871,11 @@ main {
   line-height: 1.2rem;
   text-align: center; }
 
-.closing .mail-list {
-  padding: 0 5%;
+.mail-list {
+  padding: 0;
   margin-bottom: 50px; }
 
-.closing #email {
+#email {
   font-style: italic;
   display: inline-block;
   width: 100%;
@@ -5881,10 +5885,10 @@ main {
   background: #fff;
   border: 3px solid #999; }
 
-.closing button {
+button {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
-  padding: 15px 20px;
+  padding: 15px 10px;
   width: 100%;
   height: 60px;
   color: #fff;
@@ -5893,13 +5897,17 @@ main {
   line-height: 1.2rem;
   text-align: center; }
 
-.closing button:hover {
+button:hover {
   background: #666; }
 
+form {
+  padding: 0; }
+
 a.nav-link {
-  font-size: 11px;
+  font-wieght: 300;
+  font-size: 12px;
   line-height: 1rem;
-  color: #ddd;
+  color: #999;
   text-align: center; }
 
 .social {
@@ -5943,10 +5951,41 @@ a.nav-link {
     .inverted-panel h3 {
       padding-top: 30px; }
   .closing h2 {
-    margin-top: -150px; }
+    text-align: left;
+    font-size: 35px;
+    color: #666;
+    line-height: 2rem;
+    padding: 0;
+    margin-left: 100px;
+    margin-top: -350px; }
+  .closing h4 {
+    text-align: left;
+    text-size: 50px;
+    color: #666;
+    margin-left: 100px; }
   .closing a {
-    width: 400px; }
+    font-size: 14px;
+    font-weight: 600;
+    width: 220px;
+    padding: 3px;
+    margin-left: 100px; }
   .closing #cta {
-    justify-content: center; }
-  a.foot {
-    border-right: #ddd solid 2px; } }
+    padding: 0 2px; }
+  .closing p {
+    text-align: left;
+    padding: 0;
+    margin-left: 100px; }
+  footer {
+    margin-top: 150px; }
+    footer form {
+      padding: 0 25%; }
+    footer h4 {
+      text-align: center;
+      padding-bottom: 50px; }
+    footer button {
+      padding: 0 3px;
+      margin-bottom: 50px; }
+    footer a.foot {
+      border-right: #ddd solid 2px; }
+    footer .navbar-expand-sm .navbar-nav {
+      justify-content: center; } }
