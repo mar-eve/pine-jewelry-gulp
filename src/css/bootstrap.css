@@ -5951,6 +5951,7 @@ a.nav-link {
     .inverted-panel h3 {
       padding-top: 30px; }
   .closing h2 {
+    width: 40%;
     text-align: left;
     font-size: 35px;
     color: #666;
@@ -5960,7 +5961,7 @@ a.nav-link {
     margin-top: -350px; }
   .closing h4 {
     text-align: left;
-    text-size: 50px;
+    font-size: 50px;
     color: #666;
     margin-left: 100px; }
   .closing a {
@@ -5989,3 +5990,35 @@ a.nav-link {
       border-right: #ddd solid 2px; }
     footer .navbar-expand-sm .navbar-nav {
       justify-content: center; } }
+
+@media (min-width: 1243px) {
+  h2 {
+    width: 20%;
+    text-align: left;
+    font-size: 35px;
+    color: #666;
+    line-height: 2rem;
+    padding: 0;
+    margin-left: 100px;
+    margin-top: -350px; }
+  h4 {
+    text-align: left;
+    font-size: 50px;
+    color: #666;
+    margin-left: 100px; } }
+
+@media (min-width: 1363px) {
+  .closing h2 {
+    width: 100%;
+    text-align: left;
+    font-size: 35px;
+    color: #666;
+    line-height: 2rem;
+    padding: 0;
+    margin-left: 100px;
+    margin-top: -350px; }
+  .closing h4 {
+    text-align: left;
+    text-size: 50px;
+    color: #666;
+    margin-left: 100px; } }

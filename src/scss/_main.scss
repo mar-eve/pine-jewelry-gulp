@@ -306,16 +306,12 @@ a.nav-link {
 }
 
 @media (min-width: 576px){
-
-
 	.mobile {
 		display:none;
 	}	
 	.desktop {
 		display:inline-block;
 	}
-
-
 	header {
 		background: url("../images/background1.jpg") no-repeat center;
 	
@@ -330,7 +326,6 @@ a.nav-link {
 			border: #fff solid 2px;
 		}
 	}
-
 	.diagonal-pics {
 		padding: 40px 5%;
 		h2 {
@@ -343,7 +338,6 @@ a.nav-link {
 		}
 		
 	}
-
 	.inverted-panel {
 		padding: 0 15%;
   		margin: 0;
@@ -353,13 +347,11 @@ a.nav-link {
 
 		h3 {
 			padding-top: 30px;
-		}
-	
+		}	
 	}
-
 	.closing {
-		h2 {
-	
+		h2 {	
+			width: 40%;	
 			text-align: left;
 			font-size: 35px;
 			color: #666;
@@ -370,7 +362,7 @@ a.nav-link {
 		}
 		h4 {
 			text-align: left;
-			text-size: 50px;
+			font-size: 50px;
 			color: #666;
 			margin-left: 100px;	
 		}
@@ -388,10 +380,8 @@ a.nav-link {
 			text-align: left;
 			padding: 0;
 			margin-left: 100px;	
-		}
-		
+		}		
 	}
-
 	footer {
 		margin-top: 150px;
 		form {
@@ -412,4 +402,43 @@ a.nav-link {
 			justify-content: center;
 		}
 	}
+}
+@media(min-width: 1243px){
+	h2 {	
+			width: 20%;	
+			text-align: left;
+			font-size: 35px;
+			color: #666;
+			line-height: 2rem;
+			padding: 0; 
+			margin-left: 100px;	
+			margin-top: -350px;
+		}
+		h4 {
+			text-align: left;
+			font-size: 50px;
+			color: #666;
+			margin-left: 100px;	
+		}
+}
+@media(min-width: 1363px) {
+	.closing{
+		h2 {
+			width: 100%;
+			text-align: left;
+			font-size: 35px;
+			color: #666;
+			line-height: 2rem;
+			padding: 0; 
+			margin-left: 100px;	
+			margin-top: -350px;
+		}
+		h4 {
+			text-align: left;
+			text-size: 50px;
+			color: #666;
+			margin-left: 100px;	
+		}
+	}
+
 }
