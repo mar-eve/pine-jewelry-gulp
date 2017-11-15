@@ -23,7 +23,6 @@ header {
 	flex-direction: column;
 	justify-content: center;
 
-
 	.logo {
 
 		width: 20%;
@@ -37,7 +36,6 @@ header {
 		color: #fff;
 		text-align: right;
 	}
-
 
 	.navbar-toggler {
 		text-align: right; 
@@ -57,7 +55,6 @@ header {
 		color: #fff;
 		opacity: 0.7;
 	}
-
 	
 	p {
 		font-size: 14px;
@@ -68,8 +65,6 @@ header {
 		color: #fff;
 		opacity: 0.7;
 	}
-
-
 
 	.play {
 		display: flex;
@@ -92,11 +87,8 @@ header {
 	.shop-etsy {
 		background: $gold;
 		height: 45px;
-		margin-bottom: 0;
-
-	
+		margin-bottom: 0;	
 		p {
-
 			font-size: 18px;
 			font-weight: 600;
 			text-align: center;
@@ -145,22 +137,24 @@ main {
 	
 }
 .diagonal-pics {
-		padding: 40px 5%;
-		h2 {
-			padding: 25px 0;
-		}
-		p{
-			padding: 20px 2%;
-			text-align: center;
-		}
-		img {
-			padding: 0 5%;
-		}
+	padding: 40px 5%;
+	h2 {
+		padding: 25px 0;
 	}
-
+	p{
+		padding: 20px 2%;
+		text-align: center;
+	}
+	img {
+		padding: 0 5%;
+	}
 	.four {
 		margin: 0 0.5%;
 	}
+
+}
+
+
 
 .inverted-panel {
   	margin: 0 0;
@@ -202,6 +196,7 @@ main {
 }
 
 .closing {
+
 	h2	{
 		font-family: 'Montserrat', sans-serif;
 		font-size: 22px;
@@ -211,12 +206,10 @@ main {
 		line-height: 1.2rem;
 		text-align: center;
 		margin: -80px 0 30px 0;
-	}
-	@media (min-width: 768px){
-		h2 {	
-			width: 40%;	
+	
+
+		@media (min-width: 596px){
 			text-align: left;
-			font-size: 35px;
 			color: #666;
 			line-height: 2rem;
 			padding: 0; 
@@ -224,7 +217,13 @@ main {
 			margin-top: -350px;
 		}
 
+		@media (min-width: 1198px){			
+			width: 40%;	
+			font-size: 35px;
+		
+		}
 	}
+
 	h4	{
 		font-family: 'Montserrat', sans-serif;
 		font-size: 22px;
@@ -233,21 +232,32 @@ main {
 		line-height: 1.2rem;
 		text-align: center;
 		margin-bottom: 50px;
-	}
-	@media(min-width: 768px){
-		h4 {
+
+		@media (min-width: 596px){
 			text-align: left;
-			font-size: 50px;
 			font-weight: 400;
 			margin-left: 100px;	
+				text-align: left;
+		}
+		
+		@media(min-width: 1198px){
+		
+			font-size: 50px;
+				
 		}
 	}
+
 	#cta {
-		padding: 0 4%;
+		padding: 0 8%;
+		justify-content: center;
 		@media (min-width: 400px) {
-			padding-left: 8%;
+			padding: 0 15%;
 		} 
-	
+		@media (min-width: 596px){
+			padding: 0 10%;
+			justify-content: left;
+			margin-bottom: 150px;
+		}
 	}
 	a {
 		background: $gold;
@@ -288,27 +298,28 @@ main {
 			padding: 0;
 			margin-left: 100px;
 		}
-	}
-		
-		
-	
-	
+	}	
 }
 footer {
 	h4 {
 			text-align: center;
 			padding-bottom: 50px;
 		}
-		@media(min-width: 400px){
+		/*@media(min-width: 400px){
 			form {
-				padding: 0 15%;
+				padding: 0 8%;
 			}
 		
-		}
+		}*/
+}
+form {
+@media (min-width: 400px){
+	margin: 0 10%;
+	}
 }
 .mail-list {
-		padding: 0;
 		margin-bottom: 100px;
+		justify-content: center;
 	}
 	#email {
 		font-style: italic;
@@ -323,6 +334,7 @@ footer {
 	 	border: 3px solid #999;
 	}
 	button	{
+
 		font-family: 'Montserrat', sans-serif;
 		font-size: 14px;
 		padding: 15px 10px;
