@@ -40,6 +40,7 @@ header {
 
 
 	.navbar-toggler {
+		text-align: right; 
 		color: $gold;
 		padding: 0;
 	}
@@ -185,6 +186,7 @@ main {
 	}
 	p{
 		font-family: 'Montserrat', sans-serif;
+		font-style: italic;
 		font-size: 11px;
 		color: #999;
 		font-weight: 300;
@@ -210,6 +212,19 @@ main {
 		text-align: center;
 		margin: -80px 0 30px 0;
 	}
+	@media (min-width: 768px){
+		h2 {	
+			width: 40%;	
+			text-align: left;
+			font-size: 35px;
+			color: #666;
+			line-height: 2rem;
+			padding: 0; 
+			margin-left: 100px;	
+			margin-top: -350px;
+		}
+
+	}
 	h4	{
 		font-family: 'Montserrat', sans-serif;
 		font-size: 22px;
@@ -219,21 +234,40 @@ main {
 		text-align: center;
 		margin-bottom: 50px;
 	}
+	@media(min-width: 768px){
+		h4 {
+			text-align: left;
+			font-size: 50px;
+			font-weight: 400;
+			margin-left: 100px;	
+		}
+	}
 	#cta {
-		padding: 0 8%;
+		padding: 0 4%;
+		@media (min-width: 400px) {
+			padding-left: 8%;
+		} 
+	
 	}
 	a {
 		background: $gold;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 18px;
 		display: block;
-		padding: 20px;
-		margin-bottom: 50px;
+		padding: 20px 10px;
+		margin-bottom: 0;
 		width: 100%;
 		color: #fff;
-		font-weight: 400;
+		font-weight: 600;
 		text-align: center;
+		@media (min-width: 768px) {
+			font-size: 14px;
+			font-weight: 600;
+		    width: 260px;
+		    padding: 10px 25px;		
+			}
 	}
+	
 	a:hover {
 		color: $gold;
 		background: #fff;
@@ -247,27 +281,50 @@ main {
 		font-weight: 300;
 		line-height: 1.2rem;
 		text-align: center;
+		margin-bottom: 50px;
+		@media (min-width: 768px) {
+			text-align: left;
+			font-size: 20px;
+			padding: 0;
+			margin-left: 100px;
+		}
 	}
+		
+		
+	
 	
 }
-
+footer {
+	h4 {
+			text-align: center;
+			padding-bottom: 50px;
+		}
+		@media(min-width: 400px){
+			form {
+				padding: 0 15%;
+			}
+		
+		}
+}
 .mail-list {
 		padding: 0;
-		margin-bottom: 50px;
+		margin-bottom: 100px;
 	}
 	#email {
 		font-style: italic;
+		font-size: 14px;
+		font-weight: 300;
 		display: inline-block;
 		width: 100%;
 		height: 60px;
-		color: #eee;
+		color: #999;
 		text-align: center;
 		background: #fff;
 	 	border: 3px solid #999;
 	}
 	button	{
 		font-family: 'Montserrat', sans-serif;
-		font-size: 18px;
+		font-size: 14px;
 		padding: 15px 10px;
 		width: 100%;
 		height: 60px;
@@ -276,6 +333,10 @@ main {
 		font-weight: 600;
 		line-height: 1.2rem;
 		text-align: center;
+		@media (min-width: 768px) {
+			padding: 0 3px;
+			margin-bottom: 50px;	
+		}
 	}
 	button:hover {
 		background: #666;
@@ -284,27 +345,58 @@ form {
 	padding:0;
 }
 a.nav-link {
-	font-wieght: 300;
+	padding: 17px;
+	font-weight: 300;
 	font-size: 12px;
 	line-height: 1rem;
 	color: #999;
 	text-align: center;
 }
 
+@media (min-width: 768px){
+	a.nav-link.foot, a.nav-link {
+	  border-right: #ddd solid 2px;
+	}
+	a.nav-link {
+		border: none;
+	}
+	.navbar-expand-md .navbar-nav {
+			justify-content: center;
+	}
+}
+
 .social {
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 30px;
 }
 .social a{
 	display: inline-block;
 	padding: 20px;
 	color: $gold;
+	font-weight: 600;
 }
+
+
+
+
+
 
 .desktop {
 	display: none;
 }
+.ipad {
+	display: none;
+}
 
+@media (min-width: 768px){
+	.ipad{
+		display: inline-block;
+	}
+	.ipad-mobile {
+		display: none;
+	}
+
+}
 @media (min-width: 576px){
 	.mobile {
 		display:none;
@@ -312,15 +404,13 @@ a.nav-link {
 	.desktop {
 		display:inline-block;
 	}
-	header {
-		background: url("../images/background1.jpg") no-repeat center;
-	
-		.logo {
 
+	header {
+		background: url("../images/background1.jpg") no-repeat center;	
+		.logo {
 			width: 5%;
 			max-width: 10%;
-			margin: -40px 0 0 5%;
-			
+			margin: -40px 0 0 5%;			
 		}
 		.etsy{
 			border: #fff solid 2px;
@@ -335,8 +425,7 @@ a.nav-link {
 		p{
 			padding: 0px 2%;
 			text-align: left;
-		}
-		
+		}		
 	}
 	.inverted-panel {
 		padding: 0 15%;
@@ -349,60 +438,10 @@ a.nav-link {
 			padding-top: 30px;
 		}	
 	}
-	.closing {
-		h2 {	
-			width: 40%;	
-			text-align: left;
-			font-size: 35px;
-			color: #666;
-			line-height: 2rem;
-			padding: 0; 
-			margin-left: 100px;	
-			margin-top: -350px;
-		}
-		h4 {
-			text-align: left;
-			font-size: 50px;
-			color: #666;
-			margin-left: 100px;	
-		}
-		a {
-			font-size: 14px;
-			font-weight: 600;
-		    width: 220px;
-		    padding: 3px;
-		    margin-left: 100px;	
-		}
-		#cta {
-			padding:0 2px;  
-		}
-		p{
-			text-align: left;
-			padding: 0;
-			margin-left: 100px;	
-		}		
-	}
-	footer {
-		margin-top: 150px;
-		form {
-			padding: 0 25%;
-		}
-		h4 {
-			text-align: center;
-			padding-bottom: 50px;
-		}
-		button {
-			padding: 0 3px;
-			margin-bottom: 50px;
-		}
-		a.foot {
-		  border-right: #ddd solid 2px;
-		}
-		.navbar-expand-sm .navbar-nav {
-			justify-content: center;
-		}
-	}
+		
+
 }
+/*
 @media(min-width: 1243px){
 	h2 {	
 			width: 20%;	
@@ -441,4 +480,4 @@ a.nav-link {
 		}
 	}
 
-}
+}*/
