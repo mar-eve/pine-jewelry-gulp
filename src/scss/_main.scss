@@ -22,6 +22,9 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	@media (min-width: 567px){
+		margin-bottom: 50px;
+	}
 
 	.logo {
 
@@ -31,7 +34,6 @@ header {
 		margin: 0 auto;
 		margin-top: -45px;
 	}
-
 	a.nav-link {
 		color: #fff;
 		text-align: right;
@@ -42,7 +44,6 @@ header {
 		color: $gold;
 		padding: 0;
 	}
-
 	.etsy {
 		border: none;
 	}
@@ -103,6 +104,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin: 0 1%;
 
 	h2 {
 		font-family: 'Montserrat', sans-serif;
@@ -111,7 +113,9 @@ main {
 		font-weight: 300;
 		text-align: center;
 		padding: 25px 15%;	
-		}
+		
+	
+	}
 
 	p {
 		font-family: 'Montserrat', sans-serif;
@@ -122,6 +126,11 @@ main {
 		text-align: center;
 		padding: 15px 5%;
 	}
+		@media (min-width: 567px){
+			h1, p {
+			text-align:left;
+		}
+		}
 	.icons {
 		display: flex;
 		justify-content: center;
@@ -137,7 +146,8 @@ main {
 	
 }
 .diagonal-pics {
-	padding: 40px 5%;
+	padding: 40px 10%;
+
 	h2 {
 		padding: 25px 0;
 	}
@@ -146,18 +156,32 @@ main {
 		text-align: center;
 	}
 	img {
+		
 		padding: 0 5%;
 	}
-	.four {
-		margin: 0 0.5%;
+	@media (min-width: 596px) {
+	    padding: 40px 15%;
+		h2 {
+			padding: 25px 0;
+			text-align: left;
+		}
+		p{
+			padding: 0px 2%;
+			text-align: left;
+		}
+		img {
+			padding-left: 10%;
+		}		
 	}
 
 }
 
-
+.four {
+		margin: 0 0.1%;
+	}
 
 .inverted-panel {
-  	margin: 0 0;
+  	margin: 0;
     background: #103341;
 
 	h2 {
@@ -345,6 +369,11 @@ form {
 		margin-bottom: 100px;
 		justify-content: center;
 	}
+	.email-button {
+		@media (min-width: 768px){
+			max-width: 50%;
+		}
+	}
 	#email {
 		font-style: italic;
 		font-size: 14px;
@@ -356,6 +385,9 @@ form {
 		text-align: center;
 		background: #fff;
 	 	border: 3px solid #999;
+	 	@media (min-width: 768){
+	 		max-width: 40%;
+	 	}
 	}
 	button	{
 
@@ -452,17 +484,7 @@ a.nav-link {
 			border: #fff solid 2px;
 		}
 	}
-	.diagonal-pics {
-		padding: 40px 5%;
-		h2 {
-			padding: 25px 0;
-			text-align: left;
-		}
-		p{
-			padding: 0px 2%;
-			text-align: left;
-		}		
-	}
+	
 	.inverted-panel {
 		padding: 0 15%;
   		margin: 0;

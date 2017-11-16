@@ -5700,6 +5700,9 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media (min-width: 567px) {
+    header {
+      margin-bottom: 50px; } }
   header .logo {
     width: 20%;
     max-width: 100%;
@@ -5756,7 +5759,8 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  margin: 0 1%; }
   main h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
@@ -5772,6 +5776,9 @@ main {
     line-height: 1.2rem;
     text-align: center;
     padding: 15px 5%; }
+  @media (min-width: 567px) {
+    main h1, main p {
+      text-align: left; } }
   main .icons {
     display: flex;
     justify-content: center; }
@@ -5781,7 +5788,7 @@ main {
       color: #b0b0b0; }
 
 .diagonal-pics {
-  padding: 40px 5%; }
+  padding: 40px 10%; }
   .diagonal-pics h2 {
     padding: 25px 0; }
   .diagonal-pics p {
@@ -5789,11 +5796,23 @@ main {
     text-align: center; }
   .diagonal-pics img {
     padding: 0 5%; }
-  .diagonal-pics .four {
-    margin: 0 0.5%; }
+  @media (min-width: 596px) {
+    .diagonal-pics {
+      padding: 40px 15%; }
+      .diagonal-pics h2 {
+        padding: 25px 0;
+        text-align: left; }
+      .diagonal-pics p {
+        padding: 0px 2%;
+        text-align: left; }
+      .diagonal-pics img {
+        padding-left: 10%; } }
+
+.four {
+  margin: 0 0.1%; }
 
 .inverted-panel {
-  margin: 0 0;
+  margin: 0;
   background: #103341; }
   .inverted-panel h2 {
     font-family: 'Montserrat', sans-serif;
@@ -5949,6 +5968,10 @@ footer {
   margin-bottom: 100px;
   justify-content: center; }
 
+@media (min-width: 768px) {
+  .email-button {
+    max-width: 50%; } }
+
 #email {
   font-style: italic;
   font-size: 14px;
@@ -5960,6 +5983,9 @@ footer {
   text-align: center;
   background: #fff;
   border: 3px solid #999; }
+  @media (min-width: 768) {
+    #email {
+      max-width: 40%; } }
 
 button {
   font-family: 'Montserrat', sans-serif;
@@ -6034,14 +6060,6 @@ a.nav-link {
       margin: -40px 0 0 5%; }
     header .etsy {
       border: #fff solid 2px; }
-  .diagonal-pics {
-    padding: 40px 5%; }
-    .diagonal-pics h2 {
-      padding: 25px 0;
-      text-align: left; }
-    .diagonal-pics p {
-      padding: 0px 2%;
-      text-align: left; }
   .inverted-panel {
     padding: 0 15%;
     margin: 0; }
