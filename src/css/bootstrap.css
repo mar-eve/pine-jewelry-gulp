@@ -5824,6 +5824,10 @@ main {
     height: auto;
     margin: auto; }
 
+@media (min-width: 768px) {
+  .closing .left {
+    padding-left: 10%; } }
+
 .closing h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 22px;
@@ -5832,19 +5836,22 @@ main {
   opacity: 0.7;
   line-height: 1.2rem;
   text-align: center;
-  margin: -80px 0 30px 0; }
+  margin-top: -100px; }
   @media (min-width: 596px) {
     .closing h2 {
+      margin-top: -70px; } }
+  @media (min-width: 768px) {
+    .closing h2 {
       text-align: left;
+      max-width: 45%;
+      margin: -300px 0 10px 0;
       color: #666;
       line-height: 2rem;
-      padding: 0;
-      margin-left: 100px;
-      margin-top: -350px; } }
+      padding: 0; } }
   @media (min-width: 1198px) {
     .closing h2 {
-      width: 40%;
-      font-size: 35px; } }
+      font-size: 35px;
+      margin-top: -350px; } }
 
 .closing h4 {
   font-family: 'Montserrat', sans-serif;
@@ -5854,12 +5861,10 @@ main {
   line-height: 1.2rem;
   text-align: center;
   margin-bottom: 50px; }
-  @media (min-width: 596px) {
+  @media (min-width: 768px) {
     .closing h4 {
       text-align: left;
-      font-weight: 400;
-      margin-left: 100px;
-      text-align: left; } }
+      font-weight: 400; } }
   @media (min-width: 1198px) {
     .closing h4 {
       font-size: 50px; } }
@@ -5872,9 +5877,12 @@ main {
       padding: 0 15%; } }
   @media (min-width: 596px) {
     .closing #cta {
-      padding: 0 10%;
+      padding: 0 14%;
       justify-content: left;
       margin-bottom: 150px; } }
+  @media (min-width: 768px) {
+    .closing #cta {
+      padding-left: 12px; } }
 
 .closing a {
   background: #bca64f;
@@ -5889,10 +5897,14 @@ main {
   text-align: center; }
   @media (min-width: 768px) {
     .closing a {
-      font-size: 14px;
+      font-size: 11px;
       font-weight: 600;
-      width: 260px;
-      padding: 10px 25px; } }
+      width: 150px;
+      padding: 5px 5px; } }
+  @media (min-width: 1198px) {
+    .closing a {
+      width: 250px;
+      font-size: 14px; } }
 
 .closing a:hover {
   color: #bca64f;
@@ -5911,9 +5923,12 @@ main {
   @media (min-width: 768px) {
     .closing p {
       text-align: left;
-      font-size: 20px;
+      font-size: 11px;
       padding: 0;
-      margin-left: 100px; } }
+      margin-bottom: 10px; } }
+  @media (min-width: 1198px) {
+    .closing p {
+      font-size: 20px; } }
 
 footer {
   /*@media(min-width: 400px){

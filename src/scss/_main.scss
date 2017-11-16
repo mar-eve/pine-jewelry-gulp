@@ -196,6 +196,12 @@ main {
 }
 
 .closing {
+	.left {
+		@media (min-width: 768px){
+			padding-left: 10%;
+		}
+}
+
 
 	h2	{
 		font-family: 'Montserrat', sans-serif;
@@ -205,21 +211,25 @@ main {
 		opacity: 0.7;
 		line-height: 1.2rem;
 		text-align: center;
-		margin: -80px 0 30px 0;
+		margin-top: -100px;
 	
-
 		@media (min-width: 596px){
+			margin-top: -70px;
+		}
+		@media (min-width: 768px){
 			text-align: left;
+			max-width: 45%;	
+			margin: -300px 0 10px 0;
+
 			color: #666;
 			line-height: 2rem;
 			padding: 0; 
-			margin-left: 100px;	
-			margin-top: -350px;
+			
 		}
 
 		@media (min-width: 1198px){			
-			width: 40%;	
 			font-size: 35px;
+			margin-top: -350px;
 		
 		}
 	}
@@ -233,11 +243,10 @@ main {
 		text-align: center;
 		margin-bottom: 50px;
 
-		@media (min-width: 596px){
+		@media (min-width: 768px){
 			text-align: left;
 			font-weight: 400;
-			margin-left: 100px;	
-				text-align: left;
+		
 		}
 		
 		@media(min-width: 1198px){
@@ -254,10 +263,14 @@ main {
 			padding: 0 15%;
 		} 
 		@media (min-width: 596px){
-			padding: 0 10%;
+			padding: 0 14%;
 			justify-content: left;
 			margin-bottom: 150px;
 		}
+		@media(min-width: 768px){
+		 padding-left: 12px; 
+		}
+	
 	}
 	a {
 		background: $gold;
@@ -271,11 +284,16 @@ main {
 		font-weight: 600;
 		text-align: center;
 		@media (min-width: 768px) {
-			font-size: 14px;
+			font-size: 11px;
 			font-weight: 600;
-		    width: 260px;
-		    padding: 10px 25px;		
+		    width: 150px;
+		    padding: 5px 5px;		
 			}
+			@media(min-width: 1198px){
+			width: 250px;
+			font-size: 14px;
+				
+		}
 	}
 	
 	a:hover {
@@ -294,9 +312,15 @@ main {
 		margin-bottom: 50px;
 		@media (min-width: 768px) {
 			text-align: left;
-			font-size: 20px;
+			font-size: 11px;
 			padding: 0;
-			margin-left: 100px;
+		
+			margin-bottom: 10px;
+		}
+		@media(min-width: 1198px){
+		
+			font-size: 20px;
+				
 		}
 	}	
 }
