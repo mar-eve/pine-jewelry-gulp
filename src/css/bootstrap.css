@@ -5688,6 +5688,11 @@ a.text-dark:focus, a.text-dark:hover {
 body {
   font-family: 'Montserrat', sans-serif; }
 
+img {
+  width: 100%;
+  margin: 0 auto;
+  height: auto; }
+
 .container-fluid {
   background: #fff;
   display: flex;
@@ -5702,7 +5707,8 @@ header {
   justify-content: center; }
   @media (min-width: 567px) {
     header {
-      margin-bottom: 50px; } }
+      margin-bottom: 50px;
+      height: 856px; } }
   header .logo {
     width: 20%;
     max-width: 100%;
@@ -5776,34 +5782,47 @@ main {
     line-height: 1.2rem;
     text-align: center;
     padding: 15px 5%; }
-  @media (min-width: 567px) {
-    main h1, main p {
-      text-align: left; } }
+  @media (min-width: 576px) {
+    main h2, main p {
+      text-align: left;
+      padding-left: 5%; }
+    main h2 {
+      font-size: 40px;
+      margin-top: 50px; }
+    main p {
+      font-size: 20px; } }
   main .icons {
     display: flex;
     justify-content: center; }
+    @media (min-width: 567px) {
+      main .icons {
+        justify-content: space-between; }
+        main .icons p {
+          padding: .5% 0; } }
     main .icons p {
       padding: .5% 4%;
       font-size: 1rem;
       color: #b0b0b0; }
 
 .diagonal-pics {
-  padding: 40px 10%; }
+  padding: 0 0 40px 0; }
   .diagonal-pics h2 {
-    padding: 25px 0; }
+    text-align: center;
+    padding: 50px 0 0 0; }
   .diagonal-pics p {
-    padding: 20px 2%;
+    padding: 25px 2%;
+    max-width: 645px;
     text-align: center; }
   .diagonal-pics img {
     padding: 0 5%; }
-  @media (min-width: 596px) {
+  @media (min-width: 768px) {
     .diagonal-pics {
       padding: 40px 15%; }
       .diagonal-pics h2 {
-        padding: 25px 0;
+        padding: 25px 18%;
         text-align: left; }
       .diagonal-pics p {
-        padding: 0px 2%;
+        padding: 0px 18%;
         text-align: left; }
       .diagonal-pics img {
         padding-left: 10%; } }
@@ -5821,14 +5840,17 @@ main {
     font-weight: 400;
     line-height: 1.2rem;
     text-align: center;
-    opacity: 0.7; }
+    opacity: 0.7;
+    padding-top: 50px;
+    padding-bottom: 50px; }
   .inverted-panel h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #d9d9d9;
     font-weight: 400;
     line-height: 1.2rem;
-    text-align: center; }
+    text-align: center;
+    padding-top: 30px; }
   .inverted-panel p {
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
@@ -5836,12 +5858,23 @@ main {
     color: #999;
     font-weight: 300;
     line-height: 1.2rem;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 50px; }
   .inverted-panel img {
     padding: 0 2%;
     width: 100%;
     height: auto;
     margin: auto; }
+  @media (min-width: 576px) {
+    .inverted-panel {
+      padding: 0 15%;
+      margin: 0; }
+      .inverted-panel h2 {
+        padding: 70px 0; }
+      .inverted-panel h3 {
+        padding-top: 30px; }
+      .inverted-panel p {
+        padding-bottom: 70px; } }
 
 @media (min-width: 768px) {
   .closing .left {
@@ -5856,7 +5889,7 @@ main {
   line-height: 1.2rem;
   text-align: center;
   margin-top: -100px; }
-  @media (min-width: 596px) {
+  @media (min-width: 576px) {
     .closing h2 {
       margin-top: -70px; } }
   @media (min-width: 768px) {
@@ -5890,6 +5923,7 @@ main {
 
 .closing #cta {
   padding: 0 8%;
+  margin-bottom: 0;
   justify-content: center; }
   @media (min-width: 400px) {
     .closing #cta {
@@ -5897,11 +5931,11 @@ main {
   @media (min-width: 596px) {
     .closing #cta {
       padding: 0 14%;
-      justify-content: left;
-      margin-bottom: 150px; } }
+      justify-content: left; } }
   @media (min-width: 768px) {
     .closing #cta {
-      padding-left: 12px; } }
+      padding-left: 12px;
+      margin-bottom: 150px; } }
 
 .closing a {
   background: #bca64f;
@@ -6010,7 +6044,7 @@ form {
   padding: 0; }
 
 a.nav-link {
-  padding: 17px;
+  padding: 20px;
   font-weight: 300;
   font-size: 12px;
   line-height: 1rem;
@@ -6018,12 +6052,12 @@ a.nav-link {
   text-align: center; }
 
 @media (min-width: 768px) {
-  a.nav-link.foot, a.nav-link {
+  a.nav-link.foot {
     border-right: #ddd solid 2px; }
-  a.nav-link {
-    border: none; }
   .navbar-expand-md .navbar-nav {
-    justify-content: center; } }
+    justify-content: center; }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding: 0 1.5rem; } }
 
 .social {
   text-align: center;
@@ -6059,14 +6093,7 @@ a.nav-link {
       max-width: 10%;
       margin: -40px 0 0 5%; }
     header .etsy {
-      border: #fff solid 2px; }
-  .inverted-panel {
-    padding: 0 15%;
-    margin: 0; }
-    .inverted-panel h2 {
-      padding: 50px 0; }
-    .inverted-panel h3 {
-      padding-top: 30px; } }
+      border: #fff solid 2px; } }
 
 /*
 @media(min-width: 1243px){
