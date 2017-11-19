@@ -36,9 +36,8 @@ header {
 	}
 
 	.logo {
-
-		width: 20%;
 		position:relative;
+		width: 20%;
 		max-width: 100%;
 		height: auto;
 		margin: 0 auto;
@@ -51,14 +50,14 @@ header {
 		}
 	}
 	a.nav-link {
-		color: #fff;
 		text-align: right;
+		color: #fff;		
 	}
 
 	.navbar-toggler {
+		padding: 0;
 		text-align: right; 
 		color: $gold;
-		padding: 0;
 	}
 	
 	.navbar-expand-md .navbar-collapse {
@@ -74,10 +73,10 @@ header {
 	}
 
 	h1 {
+		margin: 20px 0;
 		font-size: 30px;
 		font-weight: 300;
 		text-align: center;
-		margin: 20px 0;
 		color: #fff;
 		opacity: 0.7;
 		@media(min-width: 768px){
@@ -87,10 +86,10 @@ header {
 	}
 	
 	p {
+		margin: 0 10% 50px 10%;
+		text-align: center;	
 		font-size: 14px;
 		font-weight: 600;
-		text-align: center;
-		margin: 0 10% 50px 10%;
 		line-height: 1.5rem;
 		color: #fff;
 		opacity: 0.7;
@@ -103,17 +102,15 @@ header {
 		display: flex;
 		justify-content: center;
 		a {
-			font-size: 5rem;
 			color: #fff;
 			text-align: center;
-		}
-		
-		
+			font-size: 5rem;
+		}		
 		p{
+			margin: 20px 0 260px 0;
+			text-align: center;
 			font-size: 18px;
 			font-weight: 400;
-			text-align: center;
-			margin: 20px 0 260px 0;
 		}
 
 	}
@@ -123,10 +120,10 @@ header {
 		height: 45px;
 		margin-bottom: 0;	
 		p {
+			margin-top: 13px;
+			text-align: center;
 			font-size: 18px;
 			font-weight: 600;
-			text-align: center;
-			margin-top: 13px;
 			color: #fff;
 		}
 	}
@@ -140,34 +137,32 @@ main {
 	margin: 0 1%;
 
 	h2 {
+		padding: 25px 15%;	
+		text-align: center;	
 		font-family: 'Montserrat', sans-serif;
 		font-size: 20px;
-		color: #000;
 		font-weight: 300;
-		text-align: center;
-		padding: 25px 15%;	
-		
-	
+		color: #000;	
 	}
 	#justify {
 		text-align: justify;
 		text-align-last: center;
 	}
 	p, i {
+		padding: 15px 5%;
+		text-align: center;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 12px;
-		color: #666;
 		font-weight: 300;
 		line-height: 1.2rem;
-		text-align: center;
-		padding: 15px 5%;
+		color: #666;
 	}
 		@media (min-width: 576px){
 			h2, p, #justify {
+				padding-top: 0;
+				padding-left: 10%;
 				text-align:left;
 				text-align-last: left; 
-				padding-left: 10%;
-				padding-top: 0;
 			}
 			h2 {
 				margin-top: 0;
@@ -187,13 +182,13 @@ main {
 
 		@media(min-width: 992px) {
 			h2 {
-				font-size: 40px;
 				margin-top: 110px;
 				padding-left: 15%;
+				font-size: 40px;
 			}
-			p {
-				font-size: 20px;
+			p, #justify {
 				padding-left: 15%;
+				font-size: 20px;
 			}
 		}
 	.icons {
@@ -216,12 +211,13 @@ main {
 		}
 		@media(min-width: 992px) {
 			justify-content: space-evenly;
-			font-size: 1.5rem;
 			margin-top: 40px;
 			padding: .5% 17% .5% 5%;
+			font-size: 1.5rem;
+
 			i {
-				font-size: 2rem;
 				padding: 0;
+				font-size: 2rem;
 			}
 		}		
 	}	
@@ -231,19 +227,19 @@ main {
 	padding: 0 0 40px 0;
 
 	h2 {
-		text-align: center;
 		padding: 50px 0 0 0;
+		text-align: center;
 		font-size: 20px;
-		color: #000;      
 		font-weight: 400;
+		color: #000;      
 	}
 	p{
 		padding: 25px 2%;
 		max-width: 645px;
+		text-align: center;
 		font-size: 12px;
 		font-weight: 300;
 		color: #666;
-		text-align: center;
 	}
 	img {
 		
@@ -291,42 +287,43 @@ main {
     background: #103341;
 
 	h2 {
-		font-family: 'Montserrat', sans-serif;
-		font-size: 20px;
-		color: #fff;
-		font-weight: 400;
-		line-height: 1.2rem;
-		text-align: center;
-		opacity: 0.7;
 		padding-top: 50px;
 		padding-bottom: 50px;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 1.2rem;
+		color: #fff;
+		text-align: center;
+		opacity: 0.7;
 	}
 
 	h3 {
+		padding-top: 30px;
 		font-family: 'Montserrat', sans-serif;
+		text-align: center;
 		font-size: 14px;
-		color: #d9d9d9;
 		font-weight: 400;
 		line-height: 1.2rem;
-		text-align: center;
-		padding-top: 30px;
+		color: #d9d9d9;
 	}
 	p{
+		padding-bottom: 50px;
+		text-align: center;
 		font-family: 'Montserrat', sans-serif;
 		font-style: italic;
 		font-size: 11px;
-		color: #999;
 		font-weight: 300;
 		line-height: 1.2rem;
-		text-align: center;
-		padding-bottom: 50px;
+		color: #999;
 
 	}
 	img {
-		padding: 0 2%;
 		width: 100%;
 		height: auto;
 		margin: auto;
+		padding: 0 2%;
+
 	}
 	@media(min-width: 576px) {
 		padding: 0 15%;
@@ -354,45 +351,43 @@ main {
 
 
 	h2	{
-		font-family: 'Montserrat', sans-serif;
-		font-size: 22px;
-		color: #999;
-		font-weight: 300;
-		opacity: 0.7;
-		line-height: 1.2rem;
-		text-align: center;
 		margin-top: -50px;
 		margin-bottom: 30px;
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 22px;
+		font-weight: 300;
+		line-height: 1.2rem;
+		color: #999;
+		opacity: 0.7;
 
 		@media (min-width: 576px){
 			margin-top: -100px;
 		}
 		@media (min-width: 768px){
-			text-align: left;
 			max-width: 45%;	
 			margin: -300px 0 10px 0;
-
+			padding: 0; 
+			text-align: left;
 			color: #666;
 			line-height: 2rem;
-			padding: 0; 
 			
 		}
 
-		@media (min-width: 1198px){			
+		@media (min-width: 1198px){	
+			margin-top: -350px;		
 			font-size: 35px;
-			margin-top: -350px;
-		
 		}
 	}
 
 	h4	{
+		margin-bottom: 50px;
+		text-align: center;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 22px;
-		color: #666;
 		font-weight: 400;
+		color: #666;
 		line-height: 1.2rem;
-		text-align: center;
-		margin-bottom: 50px;
 
 		@media (min-width: 768px){
 			text-align: left;
@@ -420,135 +415,126 @@ main {
 		
 		}
 		@media(min-width: 768px){
-		 padding-left: 12px; 
+			padding-left: 12px; 
 		 	margin-bottom: 150px;
 		}
 	
 	}
 	a {
 		background: $gold;
-		font-family: 'Montserrat', sans-serif;
-		font-size: 18px;
 		display: block;
+		width: 100%;
 		padding: 20px 10px;
 		margin-bottom: 0;
-		width: 100%;
-		color: #fff;
-		font-weight: 600;
 		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 18px;
+		font-weight: 600;
+		color: #fff;
 		@media (min-width: 768px) {
-			font-size: 11px;
-			font-weight: 600;
 		    width: 150px;
 		    padding: 5px 5px;		
+			font-size: 11px;
+			font-weight: 600;
 			}
 			@media(min-width: 1198px){
 			width: 250px;
-			font-size: 14px;
-				
+			font-size: 14px;	
 		}
 	}
 	
 	a:hover {
-		color: $gold;
 		background: #fff;
 		border: 2px solid $gold;
 		text-decoration: none;
+		color: $gold;
 	}
 	p	{
+		margin-bottom: 50px;
+		text-align: center;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 11px;
-		color: #999;
 		font-weight: 300;
 		line-height: 1.2rem;
-		text-align: center;
-		margin-bottom: 50px;
+		color: #999;
 		@media (min-width: 768px) {
 			text-align: left;
 			font-size: 11px;
 			padding: 0;
-		
 			margin-bottom: 10px;
 		}
-		@media(min-width: 1198px){
-		
-			font-size: 20px;
-				
+		@media(min-width: 1198px){		
+			font-size: 20px;		
 		}
 	}	
 }
 footer {
 	h4 {
-			text-align: center;
-			padding-bottom: 50px;
+		text-align: center;
+		padding-bottom: 50px;
 		}
-		/*@media(min-width: 400px){
-			form {
-				padding: 0 8%;
-			}
 		
-		}*/
 }
 form {
-margin: 0 4%;
-@media (min-width: 400px){
-	margin: 0 10%;
+	margin: 0 4%;
+	@media (min-width: 400px){
+		margin: 0 10%;
 	}
 }
 .mail-list {
-		margin-bottom: 100px;
-		justify-content: center;
+	margin-bottom: 100px;
+	justify-content: center;
+}
+.email-button {
+	@media (min-width: 768px){
+		max-width: 50%;
 	}
-	.email-button {
-		@media (min-width: 768px){
-			max-width: 50%;
-		}
-	}
-	#email {
-		font-style: italic;
-		font-size: 14px;
-		font-weight: 300;
-		display: inline-block;
-		width: 100%;
-		height: 60px;
-		color: #999;
-		text-align: center;
-		background: #fff;
-	 	border: 3px solid #999;
-	 	@media (min-width: 768){
-	 		max-width: 40%;
-	 	}
-	}
-	button	{
+}
+#email {
+	background: #fff;
+	display: inline-block;
+ 	border: 3px solid #999;
+	text-align: center;
+	font-style: italic;
+	font-size: 14px;
+	font-weight: 300;
+	width: 100%;
+	height: 60px;
+	color: #999;
+ 	@media (min-width: 768){
+ 		max-width: 40%;
+ 	}
+}
+button {
+	background: #999;
 
-		font-family: 'Montserrat', sans-serif;
-		font-size: 14px;
-		padding: 15px 10px;
-		width: 100%;
-		height: 60px;
-		color: #fff;
-		background: #999;
-		font-weight: 600;
-		line-height: 1.2rem;
-		text-align: center;
-		@media (min-width: 768px) {
-			padding: 0 3px;
-			margin-bottom: 50px;	
-		}
+	width: 100%;
+	height: 60px;
+	padding: 15px 10px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.2rem;
+	color: #fff;
+	@media (min-width: 768px) {
+		padding: 0 3px;
+		margin-bottom: 50px;	
 	}
-	button:hover {
-		background: #666;
-	}
+}
+button:hover {
+	background: #666;
+}
 form {
 	padding:0;
 }
 a.nav-link {
 	padding: 20px;
+	text-align: center;
 	font-weight: 300;
 	font-size: 12px;
 	line-height: 1rem;
 	color: #999;
-	text-align: center;
 }
 
 @media (min-width: 768px){
@@ -557,7 +543,7 @@ a.nav-link {
 	}
 	
 	.navbar-expand-md .navbar-nav {
-			justify-content: center;
+		justify-content: center;
 	}
 	.navbar-expand-md .navbar-nav .nav-link{
 		padding: 0 1.5rem;
@@ -565,19 +551,15 @@ a.nav-link {
 }
 
 .social {
-	text-align: center;
 	margin-top: 30px;
+	text-align: center;
 }
 .social a{
 	display: inline-block;
 	padding: 20px;
-	color: $gold;
 	font-weight: 600;
+	color: $gold;
 }
-
-
-
-
 
 
 .desktop {
@@ -603,50 +585,4 @@ a.nav-link {
 	.desktop {
 		display:inline-block;
 	}
-
-
-	
-	
-		
-
 }
-/*
-@media(min-width: 1243px){
-	h2 {	
-			width: 20%;	
-			text-align: left;
-			font-size: 35px;
-			color: #666;
-			line-height: 2rem;
-			padding: 0; 
-			margin-left: 100px;	
-			margin-top: -350px;
-		}
-		h4 {
-			text-align: left;
-			font-size: 50px;
-			color: #666;
-			margin-left: 100px;	
-		}
-}
-@media(min-width: 1363px) {
-	.closing{
-		h2 {
-			width: 100%;
-			text-align: left;
-			font-size: 35px;
-			color: #666;
-			line-height: 2rem;
-			padding: 0; 
-			margin-left: 100px;	
-			margin-top: -350px;
-		}
-		h4 {
-			text-align: left;
-			text-size: 50px;
-			color: #666;
-			margin-left: 100px;	
-		}
-	}
-
-}*/
