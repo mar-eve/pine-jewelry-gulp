@@ -1,10 +1,3 @@
-// Bootstrap overrides
-//
-// Copy variables from `_variables.scss` to this file to override default values
-// without modifying source files.
-
-
-
 body {
 	  font-family: 'Montserrat', sans-serif;	
 }
@@ -21,7 +14,6 @@ img {
 	flex-direction: column;
 	justify-content: center;
 }
-
 
 header {
 	background: url("../images/mobile-background.jpg") no-repeat center;
