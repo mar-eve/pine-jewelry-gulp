@@ -5732,14 +5732,15 @@ header {
     color: #bca64f; }
   @media (min-width: 768px) {
     header .navbar-expand-md .navbar-collapse {
-      margin-top: -350px; } }
+      position: absolute;
+      margin-top: -150px; } }
   header .etsy {
     border: none; }
     @media (min-width: 768px) {
       header .etsy {
         border: #fff solid 2px; } }
   header h1 {
-    margin: 20px 0;
+    margin: 50px 0;
     font-size: 30px;
     font-weight: 300;
     text-align: center;
@@ -5748,19 +5749,29 @@ header {
     @media (min-width: 768px) {
       header h1 {
         font-size: 65px;
-        font-weight: 300; } }
+        font-weight: 300;
+        margin-bottom: 50px; } }
   header p {
     margin: 0 10% 50px 10%;
     text-align: center;
     font-size: 14px;
     font-weight: 600;
-    line-height: 1.5rem;
+    line-height: 2rem;
     color: #fff;
     opacity: 0.7; }
-
-@media-width (min-width: 768px) {
-  header p {
-    font-size: 22px; } }
+    @media (min-width: 768px) {
+      header p {
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 22px; } }
+    @media (min-width: 992px) {
+      header p {
+        padding-right: 18%;
+        padding-left: 18%; } }
+    @media (min-width: 1250px) {
+      header p {
+        padding-right: 26%;
+        padding-left: 26%; } }
   header .play {
     display: flex;
     justify-content: center; }
